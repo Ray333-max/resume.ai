@@ -21,9 +21,7 @@ st.write("Upload your resume and enter the job you're applying for.")
 import streamlit as st
 from google import genai
 
-client = genai.Client(
-    api_key=st.secrets["GEMINI_API_KEY"]
-)
+client =st.write("Gemini API key loaded:", "GEMINI_API_KEY" in st.secrets)
 
 # -------------------------
 # USER INPUT
