@@ -1,7 +1,9 @@
 from google import genai
 from pdf_reader import resume_text
 
-client = genai.Client(api_key="AQ.Ab8RN6LFZDT3FGHPbALLj7LdC9mPI0a_qAaUsVP9J4Ktx3NVEg")
+client = genai.Client(
+    api_key=st.secrets["GEMINI_API_KEY"]
+)
 
 job_title = input("What job are you applying for? ")
 
